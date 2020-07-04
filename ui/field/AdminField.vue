@@ -19,7 +19,6 @@ export default {
     'errors',
     'formMeta',
     'model',
-    'module',
     'action'
   ],
 
