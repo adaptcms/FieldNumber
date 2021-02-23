@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ value }}
+    {{ number }}
   </div>
 </template>
 
@@ -12,6 +12,12 @@ export default {
     'model',
     'package',
     'action'
-  ]
+  ],
+
+  computed: {
+    number () {
+      return parseFloat(this.value).toFixed(2)
+    }
+  }
 }
 </script>
